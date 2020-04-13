@@ -13,7 +13,7 @@ Make sure you are using Python 3.6X. Open a terminal in current project folder, 
 $ pip3 install ./requirements.txt
 ```
 ## 2.2. Golang
-Setting up Golang is trickier. If you do not wish to rebuild the golang project, you can choose to run the binary directly, assuming everythig works smoothly for you.
+Setting up Golang is trickier. If you do not wish to rebuild the golang project, you can choose to run the binary directly, assuming everything works smoothly for you.
 1st argument is the name of cleaned x,y points. 2nd, 3rd arguments are X,Y coordinates of starting point respectively. 4th argument is an integer depicting the number of paths you want to generate.
 ```sh
 $ ./yojee cleaned.csv 11.552931 104.933636 4
