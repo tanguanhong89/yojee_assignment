@@ -1,5 +1,5 @@
 # 1. Introduction
-This project features 2 different component; Data exploration done in a very short python script, and path search optimization with Golang
+This project features 2 different component; Data exploration done in a python script, and path search optimization with Golang.
 
 Data exploration is done with Python because it is very easy to manipulate small datasets, as well as for visualization.
 
