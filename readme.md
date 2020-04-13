@@ -52,12 +52,20 @@ $ python explore.py
 Once the script finishes, it should created a file named 'cleaned.csv' for cleaned data. Cleaning details are in documentation.pdf. You should also see a Plotly plot in your default browser.
 
 ## 3.2. Path search in Golang
+### 3.2.1. Binary method
 If you can run the binary "yojee" sucessfully, simply open a terminal in project folder and run
 ```sh
 $ ./yojee cleaned.csv 11.552931 104.933636 4
 ```
 1st argument is the name of cleaned x,y points. 2nd, 3rd arguments are X,Y coordinates of starting point respectively. 4th argument is an integer depicting the number of paths you want to generate.
 
+### 3.2.2. Docker Alternative
+If you have to use docker, remember this "cleaned.csv" is an existing file in the image itself unless you mount yours. This means for this docker example, you can only run "cleaned.csv".
+```sh
+sudo docker run --rm my_yojee_test cleaned.csv 11.552931 104.933636 4
+```
+
+### 3.2.3. Understanding output
 There are 2 parts to the output. The first part is the output from partition optimization, while the second part is output of nearest neighbour path search for each path (Refer to documentation.pdf). Since we used "4" for this example, we should see 4 different paths. 
 ```sh
 
